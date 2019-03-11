@@ -14,10 +14,9 @@ def main():
         {"prefecture": "福岡県", "station": "太宰府", "temperature": 15.0},
     ]
 
-
-"""
-Q1. 全国の平均気温は？
-"""
+# """
+# Q1. 全国の平均気温は？
+# """
     # 東京合計気温 = リストの1つ目 辞書の3つ目 + リストの2つ目 辞書の3つ目 + リストの3つ目 辞書の3つ目
     # total_temperature_infomation = (weather_information[0]["temperature"]) \
     #                                      + (weather_information[1]["temperature"])\
