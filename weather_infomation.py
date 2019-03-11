@@ -14,8 +14,10 @@ def main():
         {"prefecture": "福岡県", "station": "太宰府", "temperature": 15.0},
     ]
 
-    # Q1. 全国の平均気温は？
 
+"""
+Q1. 全国の平均気温は？
+"""
     # 東京合計気温 = リストの1つ目 辞書の3つ目 + リストの2つ目 辞書の3つ目 + リストの3つ目 辞書の3つ目
     # total_temperature_infomation = (weather_information[0]["temperature"]) \
     #                                      + (weather_information[1]["temperature"])\
@@ -38,32 +40,25 @@ def main():
     # all_ave_temp = 平均値を求める式
     # print(all_ave_temp)
 
-
 """
-    Q2. 大阪府のすべての駅名を出力してね。
+Q2. 大阪府のすべての駅名を出力してね。
 """
-
-"""
-    Q3. 福岡県の平均気温は？
-"""
-
-    # temp6 = weather_information[6]["temperature"]
-    # temp7 = weather_information[7]["temperature"]
-    # fukuoka_total = temp6 + temp7
-    #     print(fukuoka_total / 2)
+# for 文 で大阪府を探して、 station の要素を取り出す。
+#     osaka_station1 = weather_information[3]["station"]
+#     osaka_station2 = weather_information[4]["station"]
+#     osaka_station3 = weather_information[5]["station"]
 #
-# fukuoka_total_count = 0
-#
-# for weather in weather_information:
-#     if weather["prefecture"] == "福岡県":
-#         fukuoka_total_temperautre += weather["temperature"]
-#         fukuoka_total_count += 1
-#         print(fukuoka_total_count)
-#
-
-    # fukuoka_total_temperautre = "福岡県"
-    # for fukuoka_info in "temperature"
-
+#     print(f"{osaka_station1},{osaka_station2},{osaka_station3}")
+for spot_weather_information in weather_information:  # for in データをさらう
+    if spot_weather_information["prefecture"] == "大阪府":
+        print(spot_weather_information["station"])
+    # if weather_information == "prefecture"
+    # if 大阪を見つける
+    # print 見つけたときは駅名を出力する
+# """
+# Q3. 福岡県の平均気温は？
+# """
+#     for fukuoka_weather_information in weather_information
 
 if __name__ == "__main__":
     main()
