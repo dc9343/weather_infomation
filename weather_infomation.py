@@ -1,5 +1,6 @@
 def main():
     # 3都府県のいくつかの駅名とある日の最高気温のデータを辞書として持っています
+
     weather_information = [
         {"prefecture": "東京都", "station": "渋谷", "temperature": 6.5},
         {"prefecture": "東京都", "station": "池袋", "temperature": 7.0},
@@ -37,21 +38,28 @@ def main():
     # all_ave_temp = 平均値を求める式
     # print(all_ave_temp)
 
-    # Q2. 大阪府のすべての駅名を出力してね。
 
-    # Q3. 福岡県の平均気温は？
+"""
+    Q2. 大阪府のすべての駅名を出力してね。
+"""
+
+"""
+    Q3. 福岡県の平均気温は？
+"""
+
     # temp6 = weather_information[6]["temperature"]
     # temp7 = weather_information[7]["temperature"]
     # fukuoka_total = temp6 + temp7
     #     print(fukuoka_total / 2)
-
-    fukuoka_total_count = 0
-
-    for weather in weather_information:
-        if weather["prefecture"] == "福岡県":
-            fukuoka_total_temperautre += weather["temperature"]
-            fukuoka_total_count += 1
-            print(fukuoka_total_count)
+#
+# fukuoka_total_count = 0
+#
+# for weather in weather_information:
+#     if weather["prefecture"] == "福岡県":
+#         fukuoka_total_temperautre += weather["temperature"]
+#         fukuoka_total_count += 1
+#         print(fukuoka_total_count)
+#
 
     # fukuoka_total_temperautre = "福岡県"
     # for fukuoka_info in "temperature"
